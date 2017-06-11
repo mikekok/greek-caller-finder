@@ -1,0 +1,76 @@
+// main: ../style.scss
+
+body {
+  background: linear-gradient(rgba($black, $bg_opacity), rgba($accent, $bg_opacity)), url('../img/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: $white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .info {
+    display: flex;
+    margin-bottom: 10px;
+
+    input {
+      padding: 15px 20px;
+      border: none;
+      outline: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      color: $white;
+      background-color: rgba($black, .3);
+
+      &.callerid {
+        border-radius: 5px 0 0 5px;
+      }
+
+      &.find {
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+
+        &:hover {
+          background: linear-gradient(to right, rgba($black, .3) 0%, rgba($black, .5) 100%);
+        }
+      }
+    }
+  }
+
+  .results {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+
+    .callerinfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: rgba($black, .3);
+
+      .name {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .address {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  color: rgba($white, .3);
+}

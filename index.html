@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Greek Caller Finder</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  Styles -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="title">Greek Caller Finder</div>
+    <div class="exit"><i class="fa fa-times"></i></div>
+    <div class="mini"><i class="fa fa-window-minimize"></i></div>
+  </div>
+
+  <div class="container">
+    <div class="info">
+      <input class="callerid" type="text" placeholder="Enter a called id...">
+      <input class="find" type="submit" value="Find">
+    </div>
+    <div class="results">
+      <div class="callerinfo">
+        <div class="name"></div>
+        <div class="address"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  if (typeof module === 'object') {
+    window.module = module;
+    module = undefined;
+  }
+</script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</html>
